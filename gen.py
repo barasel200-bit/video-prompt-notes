@@ -1,5 +1,5 @@
 import html,os,json,datetime
-BASE="https://crazycattle3dunblocked.github.io/video-model-fieldnotes/"
+BASE="https://barasel200-bit.github.io/video-prompt-notes/"
 CSS="""body{max-width:720px;margin:2.5rem auto;padding:0 1.2rem;font:17px/1.65 -apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif;color:#1b1b1b}
 h1{font-size:1.7rem;line-height:1.25;margin-bottom:.4rem}
 .meta{color:#666;font-size:.85rem;margin-bottom:1.6rem}

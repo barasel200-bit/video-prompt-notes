@@ -74,7 +74,9 @@ idx=['<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="vie
      '<meta name="robots" content="index,follow"><title>Video Model Field Notes</title>',
      f'<link rel="canonical" href="{BASE}"><style>{CSS}</style></head><body>',
      '<h1>Video Model Field Notes</h1><p class="meta">Short, practical notes on prompting, testing and editing AI-generated video. Updated November 2026.</p><ul>']
-for slug,dom,title,paras in ART:
+for dom,title,intro,paras in ART:
+    paras=[intro]+paras
+    slug=dom
     fname=slug.replace('.','-')+'.html'
     ps=[]
     for i,p in enumerate(paras):

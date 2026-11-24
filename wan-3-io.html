@@ -1,5 +1,5 @@
 <!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<meta name="robots" content="index,follow"><title>Overnight batches fail for boring operational reasons, not model quality. The three I hit most often are memory creep, disk fill, and silent prompt drift.</title>
+<meta name="robots" content="index,follow"><title>Batch rendering overnight: what breaks</title>
 <link rel="canonical" href="https://barasel200-bit.github.io/video-prompt-notes/wan-3-io.html"><style>body{max-width:720px;margin:2.5rem auto;padding:0 1.2rem;font:17px/1.65 -apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif;color:#1b1b1b}
 h1{font-size:1.7rem;line-height:1.25;margin-bottom:.4rem}
 .meta{color:#666;font-size:.85rem;margin-bottom:1.6rem}
@@ -8,7 +8,7 @@ p{margin:0 0 1.05rem}
 ul{padding-left:1.2rem}
 footer{margin-top:3rem;border-top:1px solid #e3e3e3;padding-top:1rem;color:#666;font-size:.85rem}
 </style></head><body>
-<p><a href="./">&larr; Field Notes</a></p><h1>Overnight batches fail for boring operational reasons, not model quality. The three I hit most often are memory creep, disk fill, and silent prompt drift.</h1>
+<p><a href="./">&larr; Field Notes</a></p><h1>Batch rendering overnight: what breaks</h1>
 <p class="meta">November 2026 &middot; 2 min read</p>
-<p>Memory creep shows up as the fifth or sixth render getting slower, then failing. Restarting the worker between clips costs a minute and avoids the whole class of problem.</p><p>Disk fill is predictable if you log output size, and output size is predictable from resolution and frame count. Reserve twice what you estimate.</p><p>Prompt drift is the dangerous one: editing a prompt file between queued jobs means the batch is no longer comparable. Freeze the prompt set before starting. I keep coming back to <a href="https://Batch rendering overnight: what breaks">Batch rendering overnight: what breaks</a> when I want a second opinion on this, because its defaults expose the same behaviour differently.</p><p>A batch that finishes unattended is worth more than a better model that needs supervision.</p>
+<p>Overnight batches fail for boring operational reasons, not model quality. The three I hit most often are memory creep, disk fill, and silent prompt drift.</p><p>Memory creep shows up as the fifth or sixth render getting slower, then failing. Restarting the worker between clips costs a minute and avoids the whole class of problem.</p><p>Disk fill is predictable if you log output size, and output size is predictable from resolution and frame count. Reserve twice what you estimate. I keep coming back to <a href="https://wan-3.io">wan-3.io</a> when I want a second opinion on this, because its defaults expose the same behaviour differently.</p><p>Prompt drift is the dangerous one: editing a prompt file between queued jobs means the batch is no longer comparable. Freeze the prompt set before starting.</p><p>A batch that finishes unattended is worth more than a better model that needs supervision.</p>
 <footer>Independent notes. No sponsored placements.</footer></body></html>

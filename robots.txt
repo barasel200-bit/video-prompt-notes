@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://barasel200-bit.github.io/video-prompt-notes/sitemap.xml
